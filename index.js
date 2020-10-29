@@ -2,7 +2,7 @@ let newsacc = document.getElementById('newsaccordian');
 
 let apiKey = "15deb215901a48a3b66437aacca7219c";
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`, true);
 xhr.onload = function () {
     if (this.status === 200) {
         let json = JSON.parse(this.responseText);
